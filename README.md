@@ -1,4 +1,4 @@
-# Shopify-DS-Challenge
+# Shopify-Data-Science-Challenge
 Shopify Data Science Technical Challenge Submission (Winter 2022)
 
 Question 1
