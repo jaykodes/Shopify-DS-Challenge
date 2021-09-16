@@ -50,15 +50,15 @@ Answer: Peacock
 SQL Code:
 
 SELECT LastName<br>
-FROM Employees
-WHERE EmployeeID = 
-(
-  SELECT EmployeeID
-  FROM Orders
-  GROUP BY EmployeeID
-  ORDER BY COUNT(EmployeeID) DESC
-  LIMIT 1
-)
+FROM Employees<br>
+WHERE EmployeeID =<br> 
+(<br>
+  SELECT EmployeeID<br>
+  FROM Orders<br>
+  GROUP BY EmployeeID<br>
+  ORDER BY COUNT(EmployeeID) DESC<br>
+  LIMIT 1<br>
+)<br>
 
 c) What product was ordered the most by customers in Germany?
 
