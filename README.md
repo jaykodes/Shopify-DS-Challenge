@@ -34,14 +34,14 @@ Answer: 54
 
 SQL Code: 
 
-SELECT COUNT(ShipperID) AS SpeedyExpressTotalOrder
-FROM Orders
-WHERE ShipperID = 
-(
-  SELECT ShipperID
-  FROM Shippers
-  WHERE ShipperName = "Speedy Express"
-)
+SELECT COUNT(ShipperID) AS SpeedyExpressTotalOrder<br>
+FROM Orders<br>
+WHERE ShipperID =<br>
+(<br>
+&emsp;SELECT ShipperID<br>
+&emsp;FROM Shippers<br>
+&emsp;WHERE ShipperName = "Speedy Express"<br>
+)<br>
 
 b) What is the last name of the employee with the most orders?
 
@@ -54,10 +54,10 @@ FROM Employees<br>
 WHERE EmployeeID =<br> 
 (<br>
 &emsp;SELECT EmployeeID<br>
-  FROM Orders<br>
-  GROUP BY EmployeeID<br>
-  ORDER BY COUNT(EmployeeID) DESC<br>
-  LIMIT 1<br>
+&emsp;FROM Orders<br>
+&emsp;GROUP BY EmployeeID<br>
+&emsp;ORDER BY COUNT(EmployeeID) DESC<br>
+&emsp;LIMIT 1<br>
 )<br>
 
 c) What product was ordered the most by customers in Germany?
@@ -66,16 +66,16 @@ Answer: Boston Crab Meat
 
 SQL Code:
 
-SELECT ProductName
-FROM Products
-WHERE ProductID = 
-(
-  SELECT ProductID
-  FROM OrderDetails
-  INNER JOIN Orders ON OrderDetails.OrderID = Orders.OrderID
-  INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID
-  WHERE Country = "Germany"
-  GROUP BY ProductID
-  ORDER BY SUM(Quantity) DESC
-  LIMIT 1
-)
+SELECT ProductName<br>
+FROM Products<br>
+WHERE ProductID =<br>
+(<br>
+&emsp;SELECT ProductID<br>
+&emsp;FROM OrderDetails<br>
+&emsp;INNER JOIN Orders ON OrderDetails.OrderID = Orders.OrderID<br>
+&emsp;INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID<br>
+&emsp;WHERE Country = "Germany"<br>
+&emsp;GROUP BY ProductID<br>
+&emsp;ORDER BY SUM(Quantity) DESC<br>
+&emsp;LIMIT 1<br>
+)<br>
