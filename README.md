@@ -1,7 +1,7 @@
 # Shopify-Data-Science-Challenge
 Shopify Data Science Technical Challenge Submission (Winter 2022)
 
-Question 1
+<h2>Question 1</h2>
 
 a) I believe that the main reason why the calculation was wrong is thatthe numbers used in the calculation were wrong. The average order value is calculated by dividing
 the total value revenue by the number of items sold. So, in the current case, the total revenue is $15,725,640 and the total number of orders is 5,000.
