@@ -68,7 +68,7 @@ WHERE EmployeeID =
 ```
 <h4><ins>c) What product was ordered the most by customers in Germany?</ins></h4>
 
-Answer: **Boston Crab Meat**
+Answer: **Boston Crab Meat**<br>
 <ins>Note:</ins> This assumes that we are looking at overall quantity
 
 SQL Code:
@@ -88,7 +88,7 @@ WHERE ProductID =
 )
 ```
 
-Answer: **Gorgonzola Telino**
+Answer: **Gorgonzola Telino**<br>
 <ins>Note:</ins> This assumes that we are looking at the frequency of orders
 
 SQL Code:
