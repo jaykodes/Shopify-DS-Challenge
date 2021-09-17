@@ -12,11 +12,11 @@ This gives an AOV = $15,725,640 / 5,000 = $3,145.13. This is incorrect as 5,000 
 The total number of items sold by all 100 shops is 43,936. This now gives an AOV = $15,725,640 / 43,936 = $357.92. 
 This is value is much more likely as shoes are a relatively affordable item.
 
-<u>b) What metric would you report for this dataset? </u>
+<ins>b) What metric would you report for this dataset? </ins>
   
 A metric I would provide from this dataset is the average daily items sold. This is a useful metric to know because it allows the shops to gauge the amount of inventory that will be purchased each day. This can then help the shoe companies understand how many shoes to have in stock every day as well as help forecast when inventory will be low. Moreover, this metric allows us to understand the average daily revenue as the average daily revenue would be equal to the average order value multiplied by the average daily items sold.
 
-<u>c) What is its value? </u>
+<ins>c) What is its value? </ins>
 
 The average daily items sold is 1,464.53. This leads you to have an average daily revenue of $524,184.58 ($357.92 x 1,464.53 = 524,184.58).
 
@@ -34,7 +34,7 @@ From the graphs above we can see an increase in average daily items sold on cert
 
 <h2>Question 2:</h2>
 
-<u>a) How many orders were shipped by Speedy Express in total?</u>
+<ins>a) How many orders were shipped by Speedy Express in total?</ins>
 
 Answer: 54
 
@@ -49,7 +49,7 @@ WHERE ShipperID =<br>
 &emsp;WHERE ShipperName = "Speedy Express"<br>
 )<br>
 
-<u>b) What is the last name of the employee with the most orders?</u>
+<ins>b) What is the last name of the employee with the most orders?</ins>
 
 Answer: Peacock
 
@@ -66,7 +66,7 @@ WHERE EmployeeID =<br>
 &emsp;LIMIT 1<br>
 )<br>
 
-<u>c) What product was ordered the most by customers in Germany?</u>
+<ins>c) What product was ordered the most by customers in Germany?</ins>
 
 Answer: Boston Crab Meat
 
