@@ -3,14 +3,14 @@ Shopify Data Science Technical Challenge Submission (Winter 2022)
 
 <h1>Question 1</h1>
 
-<h4><ins>a) Think about what could be going wrong with our calculation. Think about a better way to evaluate this data.</ins></h4>
+<ins>a) Think about what could be going wrong with our calculation. Think about a better way to evaluate this data.</ins>
 
-<p style="font-size=12px">I believe that the main reason why the calculation was wrong is thatthe numbers used in the calculation were wrong. The average order value is calculated by dividing
+I believe that the main reason why the calculation was wrong is thatthe numbers used in the calculation were wrong. The average order value is calculated by dividing
 the total value revenue by the number of items sold. So, in the current case, the total revenue is $15,725,640 and the total number of orders is 5,000.
 
 This gives an AOV = $15,725,640 / 5,000 = $3,145.13. This is incorrect as 5,000 is the total number of transactions but not the number of items sold. 
 The total number of items sold by all 100 shops is 43,936. This now gives an AOV = $15,725,640 / 43,936 = $357.92. 
-This is value is much more likely as shoes are a relatively affordable item.</p>
+This is value is much more likely as shoes are a relatively affordable item.
 
 <ins>b) What metric would you report for this dataset? </ins>
   
