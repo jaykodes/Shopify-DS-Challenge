@@ -69,7 +69,7 @@ WHERE EmployeeID =
 <h4><ins>c) What product was ordered the most by customers in Germany?</ins></h4>
 
 Answer: **Boston Crab Meat**<br>
-<ins>Note:</ins> This assumes that we are looking at overall quantity
+<ins>Note:</ins> This assumes that we are looking at the overall quantity
 
 SQL Code:
 ```
