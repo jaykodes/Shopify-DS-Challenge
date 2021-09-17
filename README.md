@@ -40,14 +40,14 @@ Answer: 54
 
 SQL Code: 
 ```
-SELECT COUNT(ShipperID) AS SpeedyExpressTotalOrder<br>
-FROM Orders<br>
-WHERE ShipperID =<br>
-(<br>
-&emsp;SELECT ShipperID<br>
-&emsp;FROM Shippers<br>
-&emsp;WHERE ShipperName = "Speedy Express"<br>
-)<br>
+SELECT COUNT(ShipperID) AS SpeedyExpressTotalOrder
+FROM Orders
+WHERE ShipperID =
+(
+    SELECT ShipperID
+    FROM Shippers
+    WHERE ShipperName = "Speedy Express"
+)
 ```
 <ins>b) What is the last name of the employee with the most orders?</ins>
 
