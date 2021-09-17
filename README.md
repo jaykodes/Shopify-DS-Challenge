@@ -1,7 +1,7 @@
 # Shopify-Data-Science-Challenge
 Shopify Data Science Technical Challenge Submission (Winter 2022)
 
-<h2>Question 1</h2>
+<h1>Question 1</h1>
 
 <h3><ins>a) Think about what could be going wrong with our calculation. Think about a better way to evaluate this data.</ins></h3>
 
