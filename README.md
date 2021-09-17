@@ -68,7 +68,8 @@ WHERE EmployeeID =
 ```
 <h4><ins>c) What product was ordered the most by customers in Germany?</ins></h4>
 
-Answer: **Boston Crab Meat** (Note: This assumes that we are looking at overall quantity)
+Answer: **Boston Crab Meat**
+<ins>Note:</ins> This assumes that we are looking at overall quantity
 
 SQL Code:
 ```
@@ -83,6 +84,26 @@ WHERE ProductID =
     WHERE Country = "Germany"
     GROUP BY ProductID
     ORDER BY SUM(Quantity) DESC
+    LIMIT 1
+)
+```
+
+Answer: **Gorgonzola Telino**
+<ins>Note:</ins> This assumes that we are looking at the frequency of orders
+
+SQL Code:
+```
+SELECT ProductName
+FROM Products
+WHERE ProductID =
+(
+    SELECT ProductID
+    FROM OrderDetails
+    INNER JOIN Orders ON OrderDetails.OrderID = Orders.OrderID
+    INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID
+    WHERE Country = "Germany"
+    GROUP BY ProductID
+    ORDER BY COUNT(ProductID) DESC
     LIMIT 1
 )
 ```
