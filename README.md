@@ -54,34 +54,35 @@ WHERE ShipperID =
 Answer: Peacock
 
 SQL Code:
-
-SELECT LastName<br>
-FROM Employees<br>
-WHERE EmployeeID =<br> 
-(<br>
-&emsp;SELECT EmployeeID<br>
-&emsp;FROM Orders<br>
-&emsp;GROUP BY EmployeeID<br>
-&emsp;ORDER BY COUNT(EmployeeID) DESC<br>
-&emsp;LIMIT 1<br>
-)<br>
-
+```
+SELECT LastName
+FROM Employees
+WHERE EmployeeID =
+(
+    SELECT EmployeeID
+    FROM Orders
+    GROUP BY EmployeeID
+    ORDER BY COUNT(EmployeeID) DESC
+    LIMIT 1
+)
+```
 <ins>c) What product was ordered the most by customers in Germany?</ins>
 
 Answer: Boston Crab Meat
 
 SQL Code:
-
-SELECT ProductName<br>
-FROM Products<br>
-WHERE ProductID =<br>
-(<br>
-&emsp;SELECT ProductID<br>
-&emsp;FROM OrderDetails<br>
-&emsp;INNER JOIN Orders ON OrderDetails.OrderID = Orders.OrderID<br>
-&emsp;INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID<br>
-&emsp;WHERE Country = "Germany"<br>
-&emsp;GROUP BY ProductID<br>
-&emsp;ORDER BY SUM(Quantity) DESC<br>
-&emsp;LIMIT 1<br>
-)<br>
+```
+SELECT ProductName
+FROM Products
+WHERE ProductID =
+(
+    SELECT ProductID
+    FROM OrderDetails
+    INNER JOIN Orders ON OrderDetails.OrderID = Orders.OrderID
+    INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID
+    WHERE Country = "Germany"
+    GROUP BY ProductID
+    ORDER BY SUM(Quantity) DESC
+    LIMIT 1
+)
+```
