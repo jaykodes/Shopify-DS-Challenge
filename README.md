@@ -3,7 +3,7 @@ Shopify Data Science Technical Challenge Submission (Winter 2022)
 
 <h2>Question 1</h2>
 
-<ins>a) Think about what could be going wrong with our calculation. Think about a better way to evaluate this data.</ins>
+<h7><ins>a) Think about what could be going wrong with our calculation. Think about a better way to evaluate this data.</ins></h7>
 
 I believe that the main reason why the calculation was wrong is thatthe numbers used in the calculation were wrong. The average order value is calculated by dividing
 the total value revenue by the number of items sold. So, in the current case, the total revenue is $15,725,640 and the total number of orders is 5,000.
@@ -12,11 +12,11 @@ This gives an AOV = $15,725,640 / 5,000 = $3,145.13. This is incorrect as 5,000 
 The total number of items sold by all 100 shops is 43,936. This now gives an AOV = $15,725,640 / 43,936 = $357.92. 
 This is value is much more likely as shoes are a relatively affordable item.
 
-<ins>b) What metric would you report for this dataset? </ins>
+<h7><ins>b) What metric would you report for this dataset? </ins></h7>
   
 A metric I would provide from this dataset is the average daily items sold. This is a useful metric to know because it allows the shops to gauge the amount of inventory that will be purchased each day. This can then help the shoe companies understand how many shoes to have in stock every day as well as help forecast when inventory will be low. Moreover, this metric allows us to understand the average daily revenue as the average daily revenue would be equal to the average order value multiplied by the average daily items sold.
 
-<ins>c) What is its value? </ins>
+<h7><ins>c) What is its value? </ins></h7>
 
 The average daily items sold is 1,464.53. This leads you to have an average daily revenue of $524,184.58 ($357.92 x 1,464.53 = 524,184.58).
 
