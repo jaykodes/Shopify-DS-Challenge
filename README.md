@@ -39,7 +39,7 @@ From the graphs above we can see an increase in average daily items sold on cert
 Answer: 54
 
 SQL Code: 
-
+```
 SELECT COUNT(ShipperID) AS SpeedyExpressTotalOrder<br>
 FROM Orders<br>
 WHERE ShipperID =<br>
@@ -48,7 +48,7 @@ WHERE ShipperID =<br>
 &emsp;FROM Shippers<br>
 &emsp;WHERE ShipperName = "Speedy Express"<br>
 )<br>
-
+```
 <ins>b) What is the last name of the employee with the most orders?</ins>
 
 Answer: Peacock
