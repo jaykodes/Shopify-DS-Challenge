@@ -26,7 +26,7 @@ The red line represents the average daily revenue value of $524,184.58.
 
 From the graphs above we can see an increase in average daily items sold on certain days which corresponds to the dates where shop #42 sold shoes, which then also, in part with shop #78 average order value, is the primary reasons for the anomalies in the average daily revenue chart. All of the code required for these computations and graphs can be found in "shopify.py"
 
-Question 2:
+<h2>Question 2:</h2>
 
 a) How many orders were shipped by Speedy Express in total?
 
