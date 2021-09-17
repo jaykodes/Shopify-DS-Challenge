@@ -36,7 +36,7 @@ From the graphs above we can see an increase in average daily items sold on cert
 
 <h4><ins>a) How many orders were shipped by Speedy Express in total?</ins></h4>
 
-Answer: 54
+Answer: **54**
 
 SQL Code: 
 ```
@@ -51,7 +51,7 @@ WHERE ShipperID =
 ```
 <h4><ins>b) What is the last name of the employee with the most orders?</ins></h4>
 
-Answer: Peacock
+Answer: **Peacock**
 
 SQL Code:
 ```
@@ -68,7 +68,7 @@ WHERE EmployeeID =
 ```
 <h4><ins>c) What product was ordered the most by customers in Germany?</ins></h4>
 
-Answer: Boston Crab Meat
+Answer: **Boston Crab Meat**
 
 SQL Code:
 ```
